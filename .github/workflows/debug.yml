@@ -1,0 +1,17 @@
+# DONT EDIT THIS FILE OUTSIDE OF complex-gmbh/php-automation-templates
+# changes will be one-way synced from the automation repos
+
+name: Help for chatops commands
+
+on:
+  repository_dispatch:
+    types: [debug-command] # triggered by /help PR comment
+
+jobs:
+  help:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dump the client payload context
+        env:
+          PAYLOAD_CONTEXT: ${{ toJson(github.event.client_payload) }}
+        run: echo "$PAYLOAD_CONTEXT"
