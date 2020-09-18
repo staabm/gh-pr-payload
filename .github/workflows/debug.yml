@@ -2,10 +2,10 @@ name: dump client_payload
 
 on:
   repository_dispatch:
-    types: [debug-command] # triggered by /help PR comment
+    types: [debug-command] # triggered by /debug PR comment
 
 jobs:
-  help:
+  debug:
     runs-on: ubuntu-latest
     steps:
       - name: Dump the client payload context
