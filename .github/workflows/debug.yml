@@ -1,4 +1,4 @@
-name: dump client_payload
+name: dump client_payload TEST
 
 on:
   repository_dispatch:
