@@ -1,7 +1,4 @@
-# DONT EDIT THIS FILE OUTSIDE OF complex-gmbh/php-automation-templates
-# changes will be one-way synced from the automation repos
-
-name: Help for chatops commands
+name: dump client_payload
 
 on:
   repository_dispatch:
