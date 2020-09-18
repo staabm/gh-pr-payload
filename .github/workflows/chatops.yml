@@ -11,6 +11,6 @@ jobs:
       - name: Slash Command Dispatch
         uses: peter-evans/slash-command-dispatch@v2
         with:
-          token: ${{ secrets.STAABM_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           commands: debug
           issue-type: pull-request
