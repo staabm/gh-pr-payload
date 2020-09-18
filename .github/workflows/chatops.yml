@@ -13,4 +13,3 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commands: debug
-          issue-type: pull-request
