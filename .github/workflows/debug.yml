@@ -2,7 +2,7 @@ name: dump client_payload
 
 on:
   repository_dispatch:
-    types: [dump-command] # triggered by /debug PR comment
+    types: [dump-command] # triggered by /dump PR comment
 
 jobs:
   dump:
